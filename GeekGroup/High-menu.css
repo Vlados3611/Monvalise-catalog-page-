@@ -1,0 +1,562 @@
+* {
+    margin: 0px;
+}
+
+
+.brands-for-low-price {
+    width: 100%;
+    height: 44px;
+    background-color: rgba(203, 220, 255, 1);
+}
+
+.brands-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.sticker-for-brands-box {
+    font-weight: 400;
+    size: 22px;
+    line-height: 33px;
+    width: 22px;
+    height: 33px;
+    transform: rotate(-30deg);
+    margin-top: -5.5px;
+    margin-left: 80px;
+}
+
+.sticker-for-brands-box-1 {
+    width: 24px;
+    height: 24px;
+    padding-left: 6px;
+    transform: rotate(30deg);
+}
+
+.title-for-brands-box {
+    width: 354px;
+    height: 24px;
+    font-family: 'Stolzl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #0F1A34;
+    padding-left: 20px;
+    margin-top: -2px;
+}
+
+.high-menu-section {
+    width: auto;
+    height: 136px;
+    padding: 0px 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.first-high-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(1, 1, 1, 0.1);
+}
+
+.first-box-high-menu-logo {
+    display: flex;
+    flex-direction: row;
+    width: 208px;
+    height: 24px;
+    justify-content: center;
+    position: relative;
+}
+
+.monvalise-logo {
+    width: 150px;
+    height: 21px;
+    padding-right: 50px;
+}
+
+.ball-for-movnvalise-logo {
+      width: 4.34px;
+      height: 4.34px;
+      position: absolute;
+      right: 63px;
+}
+
+.first-box-high-menu-search {
+    display: flex;
+    flex-direction: row;
+    width: 639px;
+    height: 40px;
+    justify-content: center;
+    position: relative;
+    margin-top: -4px;
+}
+
+.search-icon {
+    width: 16.42px;
+    height: 16.42px;
+    position: absolute;
+    left: 18px;
+    
+    top: 13px;
+    filter: invert(0);
+    cursor: pointer;
+}
+
+.search-input {
+    width: 639px;
+    height: 40px;
+    border: 2px solid #E0E3E3;
+    border-radius: 5px;
+    padding-left: 50px;
+    font-family: 'Arial';
+    font-weight: 400;
+    font-size: 14px;
+    font-style: normal;
+    outline: 0;
+    padding-bottom: 0px;
+}
+
+.first-box-high-menu-button {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 200px;
+    height: 44px;
+    padding-left: 24px;
+    align-items: center;
+}
+
+.button-for-first-box {
+    width: 129px;
+    height: 38px;
+    background-color: #2D3132;
+    color: white;
+    border-radius: 4px;
+    font-family: 'Arial';
+    font-size: 13px;
+    font-weight: 400;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.button-for-first-box:hover {
+    background-color: #4a4b4e;
+}
+
+.button-for-first-box:active {
+    opacity: 0.8;
+}
+
+.click-box-for-ukr {
+    display: flex;
+    margin-left: 24px;
+    position: relative;
+}
+
+#checkbox-for-ukr {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 3;
+}
+
+#checkbox-for-ukr:checked ~ .arrow-for-ukr {
+    transform: rotate(180deg);
+}
+
+#checkbox-for-ukr:checked ~ .lang-box {
+    visibility: visible;
+    height: 56.5px;
+}
+
+.lang-box {
+    position: absolute;
+    width: 40px;
+    height: 0px;
+    background-color: lightgray;
+    text-align: center;
+    top: 20px;
+    border: 0.1px solid rgba(211, 211, 211, 0.268);
+    visibility: hidden;
+    transition: 0.2s ease-in-out;
+    overflow: hidden;
+    border-radius: 2px;
+}
+
+.ukr-lang {
+    background-color: rgb(253, 253, 253);
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.ukr-lang:hover {
+    background-color:rgb(249, 249, 249);
+}
+
+.eng-lang {
+    background-color: rgb(253, 253, 253);
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.eng-lang:hover {
+    background-color:rgb(249, 249, 249);
+}
+
+
+
+.Ukr-title {
+    font-size: 12px;
+    font-weight: bold;
+    font-family: 'Arial';
+    font-style: normal;
+    line-height: 150%;
+    color: #2D3132;
+    
+}
+
+.arrow-for-ukr {
+     width: 10.75px;
+     height: 6.07px;
+     margin-left: 5px;
+     margin-top: 7px;
+     transition: 0.2s ease;
+     cursor: pointer;
+}
+
+.first-box-high-menu-messages {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 250px;
+    height: 44px;
+    align-items: center;
+    position: relative;
+}
+
+.heart-icon {
+    width: 20.49px;
+    height: 18.73px;
+    padding-right: 24px;
+    cursor: pointer;
+}
+
+.message-for-heart-icon {
+    position: absolute;
+    font-family: 'Stolzl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    left: 34px;
+    top: 4px;
+    background-color: #EFF1F1;
+    border: 2.4px solid #FFFFFF;
+    border-radius: 13px;
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+    
+}
+
+.message-icon {
+    width: 20px;
+    height: 18.6px;
+    padding-right: 24px;
+    cursor: pointer;
+}
+
+.messages-for-message-icon {
+    position: absolute;
+    font-family: 'Stolzl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 150%;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    top: 5px;
+    left: 80px;
+    background-color: #FF5449;
+    border: 2.4px solid #FFFFFF;
+    color: white;
+    border-radius: 13px;
+    width: 14px;
+    height: 13px;
+}
+
+.cart-icon {
+    width: 19px;
+    height: 19px;
+    padding-right: 24px;
+    cursor: pointer;
+}
+
+.message-for-cart-icon {
+    position: absolute;
+    font-family: 'Stolzl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 150%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    top: 5px;
+    left: 124px;
+    background-color: #EFF1F1;
+    border: 2.4px solid #FFFFFF;
+    border-radius: 13px;
+    width: 14px;
+    height: 13px;
+    cursor: pointer;
+}
+
+.high-avatar {
+    width: 32px;
+    height: 32px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.arrow-for-high-avatar {
+    width: 10.45px;
+    height: 6.07px;
+    margin-left: 9px;
+    cursor: pointer;
+}
+
+.second-high-menu {
+    display: flex;
+    flex-direction: row;
+    width: 1320px;
+    height: 52px;
+    
+}
+
+.button-box-for-second-high-menu {
+    display: flex;
+    width: 1070px;
+    
+    text-align: center;
+}
+
+.button-second-high-menu_link {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 13px;
+    font-family: 'Arial';
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 2px;
+    
+    height: 17px;
+    cursor: pointer;
+}
+
+.border-top-for-high-muenu {
+    border-top: 1px solid rgb(1, 1, 1, 0.1);
+    width: 100%;
+    height: 50px;
+    margin-top: 2px;
+}
+
+.mobile-table-section {
+    width: 100%;
+    height: 50px;
+    display: none;
+}
+
+.mobile-menu-box {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.monvalise-logo-1 {
+    width: 130px;
+    height: 18px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.ball-for-movnvalise-logo-1 {
+    width: 4.34px;
+    height: 4.34px;
+    position: absolute;
+    top: 13px;
+    left: 106px;
+}
+
+.menu-box {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    width: 25px;
+    height: 25px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.menu-icon {
+    width: 25px;
+    height: 4px;
+    background-color: #2D3123;
+    border-radius: 50px;
+    position: absolute;
+    
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.menu-icon::before {
+    content: "";
+    width: 25px;
+    height: 4px;
+    background-color: #2D3123;
+    border-radius: 50px;
+    position: absolute;
+    right: 0px;
+    top: 6.5px;
+}
+
+.menu-icon::after {
+    content: "";
+    width: 25px;
+    height: 4px;
+    background-color: #2D3123;
+    border-radius: 50px;
+    position: absolute;
+    right: 0px;
+    top: -6.5px;
+}
+
+@media (min-width: 0px) and (max-width: 368px) {
+    .first-box-high-menu-search {
+        width: 200px;
+    }
+
+    .search-input {
+        width: 200px;
+        margin-right: 30px;
+    }
+    .sticker-for-brands-box {
+        width: 16px;
+        height: 24px;
+        padding-right: 5px;
+        margin-left: 0px;
+    }
+    .sticker-for-brands-box-1 {
+        width: 18px;
+        height: 18px;
+    }
+    .title-for-brands-box {
+        font-size: 14px;
+        padding-top: 2px;
+    }
+    .brands-box {
+        padding-left: 20px;
+    }
+
+    .high-menu-section {
+        display: none;
+    }
+
+    .mobile-table-section {
+        display: block;
+    }
+
+    .title-for-brands-box {
+        width: 254px;
+    }
+}
+
+@media (min-width: 369px) and (max-width: 768px) {
+    .first-box-high-menu-search {
+        width: 200px;
+    }
+
+    .search-input {
+        width: 200px;
+        margin-right: 30px;
+    }
+
+    .sticker-for-brands-box {
+        width: 16px;
+        height: 24px;
+        padding-right: 5px;
+    }
+    .sticker-for-brands-box-1 {
+        width: 18px;
+        height: 18px;
+    }
+    .title-for-brands-box {
+        font-size: 16px;
+        padding-top: 2px;
+    }
+    .brands-box {
+        padding-left: 20px;
+    }
+
+    .high-menu-section {
+        display: none;
+    }
+
+    .mobile-table-section {
+        display: block;
+    }
+}
+
+@media (max-width: 1024px) {
+    .high-menu-section {
+        padding: 0px 15px;
+    }
+
+    .first-box-high-menu-search {
+        width: 289px;
+    }
+    .blog-media {
+        display: none;
+    }
+
+    .second-high-menu {
+        width: 100%;
+    }
+
+    .width-for-title {
+        width: 90px;
+    }
+}

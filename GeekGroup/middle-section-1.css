@@ -1,0 +1,246 @@
+.flex-grid-box {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.items-grid-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    row-gap: 16px;
+    column-gap: 16px;
+    padding: 24px;
+    width: 1080px;
+}
+
+.items-grid-box {
+    width: 312px;
+    height: 476px;
+    border: 1px solid rgba(239, 241, 241, 1);
+    background: #FFFFFF;
+    border-radius: 4px;
+}
+
+.item-img-box {
+    height: 340px;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.like-img-for-items-box {
+    width: 20px;
+    height: 16px;
+    position: absolute;
+    top: 26px;
+    right: 26px;
+    cursor: pointer;
+}
+
+.img-for-items-box {
+    width: 207px;
+    height: 263px;
+    padding-left: 50px;
+    padding-top: 50px
+}
+
+.title-top-for-items-box {
+    width: 38px;
+    height: 17px;
+    text-align: center;
+    padding-top: 7px;
+    background: #B4FFF0;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 10px;
+    font-style: normal;
+    color: #00382F;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-left: 20px;
+}
+
+.items-img-box-1 {
+    
+    height: 120px;
+    width: 100%;
+}
+
+.title-items-name-box {
+    width: 264px;
+    height: 46px;
+
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.product-items-made {
+    width: 88px;
+    height: 15px;
+    font-family: 'Stolzl';
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 150%;
+    color: #5C5F60;
+    cursor: pointer;
+}
+
+.product-items-name {
+    padding-top: 3px;
+    width: 264px;
+    height: 21px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    color: #2D3132;
+} 
+
+.price-box {
+    float: left;
+    padding-left: 20px;
+    width: 100px;
+}
+
+.before-price {
+    width: 144px;
+    height: 18px;
+    font-family: 'Arial';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 150%;
+    text-decoration-line: line-through;
+    color: #747778;
+}
+
+.after-price {
+    width: 144px;
+    height: 21px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 150%;
+    color: #2D3132;
+}
+
+.location-box {
+    float: right;
+    display: flex;
+    flex-direction: row;
+    
+    width: 70px;
+    padding-left: 70px;
+    padding-bottom: 4px;
+}
+
+.location-img {
+    width: 9px;
+    height: 11px;
+    margin-top: 3px;
+}
+
+.location-title {
+    width: 47px;
+    height: 18px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 150%;
+    color: #2D3123;
+    padding-left: 8px;
+}
+
+.account-box {
+    float: right;
+    display: flex;
+    margin-left: 20px;
+    width: 120px;
+}
+
+.avatar-account {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.name-account {
+    width: 76px;
+    height: 21px;
+    font-family: 'Stolzl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #2D3123;
+    padding-left: 13px;
+    cursor: pointer;
+} 
+
+.location-account-box {
+    display: flex;
+    flex-direction: column;
+    
+    width: 120px;
+    float: right;
+    padding-right: 20px;
+    margin-right: 20px;
+}
+
+@media (min-width: 0px) and (max-width: 368px) {
+    .flex-grid-box {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    .items-grid-section {
+        grid-template-columns: 1fr;
+        width: 312px;
+        
+    }
+
+    .items-grid-box {
+        width: 312px;
+    }
+}
+
+@media (min-width: 369px) and (max-width: 768px) {
+
+    .flex-grid-box {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .items-grid-box {
+        width: 600px;
+    }
+
+    .item-img-box {
+        justify-content: center;
+        
+    }
+
+    .img-for-items-box {
+        margin-right: 25px;
+    }
+
+    .items-grid-section {
+        grid-template-columns: 1fr;
+        width: 600px;
+        
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .items-grid-section {
+        grid-template-columns: 1fr 1fr;
+    }
+}
